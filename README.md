@@ -1,8 +1,9 @@
 # SmsParkPay
 
-Easily pay parking by SMS (Xamarin POC app)
+Easily pay parking by SMS (Xamarin POC app). A playground for learning Xamarin.
 
-![](docs/screenshots/Screenshot_01.png)
-![](docs/screenshots/Screenshot_02.png)
+<img src="docs/screenshots/Screenshot_01.png" width="300">
+<img src="docs/screenshots/Screenshot_02.png" width="300">
+
 
 

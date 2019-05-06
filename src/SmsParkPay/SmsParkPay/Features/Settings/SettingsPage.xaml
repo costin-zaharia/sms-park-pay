@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmsParkPay.Features.Settings.SettingsPage"
+             xmlns:custom="clr-namespace:SmsParkPay.Localization"
+             Disappearing="OnSettingsPageDissapearing"
+             Title="{custom:Translate Settings}">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+            <Label FormattedText="{Binding AppInfo}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="{custom:Translate LicensePlate}" FontAttributes="Bold" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Text="{Binding LicensePlate}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="{custom:Translate SMSNumber}" FontAttributes="Bold" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Text="{Binding PhoneNumber}" Keyboard="Telephone" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

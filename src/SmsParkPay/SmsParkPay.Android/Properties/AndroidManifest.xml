@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="0.0.1" package="com.zaco.SmsPayCluj" android:installLocation="internalOnly" android:versionCode="11">
+	<uses-sdk android:targetSdkVersion="28" android:minSdkVersion="23" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<application android:label="Easy Sms Park Cluj" android:icon="@drawable/icon"></application>
+</manifest>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sendSms="clr-namespace:SmsParkPay.Features.SendSMS;assembly=SmsParkPay"
+             xmlns:custom="clr-namespace:SmsParkPay.Localization"
+             x:Class="SmsParkPay.Features.SendSMS.SendSMSPage"
+             Title="{custom:Translate SendSMS}">
+
+    <ScrollView>
+        <StackLayout Padding="16,40,16,40"
+                     Spacing="7">
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="{custom:Translate Area}"
+                                  FontAttributes="Bold" 
+                                  FontSize="22"/>
+                            <Span Text=" " />
+                            <Span Text="1" 
+                                  ForegroundColor="{StaticResource LightTextColor}" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="{custom:Translate Area1Option1}"
+                    Command="{Binding SendSmsCommand}"
+                    CommandParameter="{x:Static sendSms:FareType.Area1Time30Minutes}"
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="White"/>
+
+            <Button Text="{custom:Translate Area1Option2}"
+                    Command="{Binding SendSmsCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    CommandParameter="{x:Static sendSms:FareType.Area1Time1Hour}"
+                    TextColor="White" />
+
+            <Button Text="{custom:Translate Area1Option3}"
+                    Command="{Binding SendSmsCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    CommandParameter="{x:Static sendSms:FareType.Area1Time2Hours}"
+                    TextColor="White" />
+
+            <Label FontSize="22"
+                   Margin="10,10,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="{custom:Translate Area}"
+                                  FontAttributes="Bold"
+                                  FontSize="22"/>
+                            <Span Text=" " />
+                            <Span Text="2"
+                                  ForegroundColor="{StaticResource LightTextColor}" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="{custom:Translate Area2Option1}"
+                    Command="{Binding SendSmsCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    CommandParameter="{x:Static sendSms:FareType.Area2Time1Hour}"
+                    TextColor="White"/>
+
+            <Button Text="{custom:Translate Area2Option2}"
+                    Command="{Binding SendSmsCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    CommandParameter="{x:Static sendSms:FareType.Area2Time2Hours}"
+                    TextColor="White" />
+
+            <Button Text="{custom:Translate Area2Option3}"
+                    Command="{Binding SendSmsCommand}"
+                    BackgroundColor="{StaticResource Primary}"
+                    CommandParameter="{x:Static sendSms:FareType.Area2Time4Hours}"
+                    TextColor="White" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

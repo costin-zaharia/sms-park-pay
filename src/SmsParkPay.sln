@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{A3408B06-9295-418C-8D76-E63693F63D4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4FFDA878-7F11-4776-8DD2-96DBFF0FF128}"
+	ProjectSection(SolutionItems) = preProject
+		SmsParkPay\SmsParkPay.Tests\SmsParkPay.Tests.csproj = SmsParkPay\SmsParkPay.Tests\SmsParkPay.Tests.csproj
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsParkPay", "SmsParkPay\SmsParkPay\SmsParkPay.csproj", "{EC48F541-91DD-46D9-8132-76CD02978473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsParkPay.Android", "SmsParkPay\SmsParkPay.Android\SmsParkPay.Android.csproj", "{C31ADCF4-1403-4C9B-B748-62B609F0F464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC48F541-91DD-46D9-8132-76CD02978473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC48F541-91DD-46D9-8132-76CD02978473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC48F541-91DD-46D9-8132-76CD02978473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC48F541-91DD-46D9-8132-76CD02978473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC48F541-91DD-46D9-8132-76CD02978473} = {A3408B06-9295-418C-8D76-E63693F63D4D}
+		{C31ADCF4-1403-4C9B-B748-62B609F0F464} = {A3408B06-9295-418C-8D76-E63693F63D4D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8E5F561-D6A2-461D-9D8B-5CA730DABCA6}
+	EndGlobalSection
+EndGlobal
